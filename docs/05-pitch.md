@@ -52,4 +52,4 @@
 ---
 
 * **Slides:** [Canva](https://canva.link/byb0lsnrmmo7ho1)
-* **Vídeo:** [ ]
+* **Vídeo:** [YouTube](https://www.youtube.com/watch?v=0F-s_V_Qz6Y&feature=youtu.be)
