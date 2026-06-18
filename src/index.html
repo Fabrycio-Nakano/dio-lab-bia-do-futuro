@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di - Consultor Financeiro Inteligente</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- TOP BAR / HEADER -->
+        <header class="app-header">
+            <div class="logo">
+                <i class="fa-solid fa-brain-circuit glow-icon"></i>
+                <div class="logo-text">
+                    <h1>Di</h1>
+                    <span>Consultor & Educador Financeiro</span>
+                </div>
+            </div>
+            <div class="config-panel">
+                <div class="api-selector">
+                    <label for="provider-select"><i class="fa-solid fa-key"></i> Provedor:</label>
+                    <select id="provider-select">
+                        <option value="simulated">Modo Simulação (Sem Chave)</option>
+                        <option value="gemini">Google Gemini API</option>
+                        <option value="openai">OpenAI GPT API</option>
+                        <option value="codestral">Mistral Codestral API</option>
+                    </select>
+                </div>
+                <div class="api-key-input-container" id="api-key-container" style="display: none;">
+                    <input type="password" id="api-key-input" placeholder="Cole sua API Key aqui...">
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN LAYOUT -->
+        <main class="app-main">
+            <!-- LEFT COLUMN: DASHBOARD -->
+            <section class="dashboard-section card-glass">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-chart-pie"></i> Painel do Cliente</h2>
+                    <span class="user-badge" id="client-name">Carregando...</span>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- CLIENT DETAILS -->
+                    <div class="info-card profile-card">
+                        <h3><i class="fa-solid fa-user"></i> Perfil</h3>
+                        <div class="profile-details">
+                            <p><strong>Idade:</strong> <span id="client-age">-</span> anos</p>
+                            <p><strong>Profissão:</strong> <span id="client-job">-</span></p>
+                            <p><strong>Renda Mensal:</strong> <span id="client-income">-</span></p>
+                            <p><strong>Perfil:</strong> <span class="badge badge-moderado" id="client-profile">-</span></p>
+                        </div>
+                    </div>
+
+                    <!-- EMERGENCY RESERVE -->
+                    <div class="info-card reserve-card">
+                        <h3><i class="fa-solid fa-shield-halved"></i> Reserva de Emergência</h3>
+                        <div class="reserve-progress-container">
+                            <div class="reserve-values">
+                                <span id="reserve-current">R$ 0</span>
+                                <span>de</span>
+                                <span id="reserve-target">R$ 0</span>
+                            </div>
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" id="reserve-progress-bar" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-percentage" id="reserve-percentage">0% concluído</span>
+                        </div>
+                    </div>
+
+                    <!-- FINANCIAL GOALS -->
+                    <div class="info-card goals-card">
+                        <h3><i class="fa-solid fa-bullseye"></i> Metas Ativas</h3>
+                        <div class="goals-list" id="goals-list-container">
+                            <!-- Metas carregadas dinamicamente -->
+                        </div>
+                    </div>
+
+                    <!-- TRANSACTION CHARTS -->
+                    <div class="info-card chart-card">
+                        <h3><i class="fa-solid fa-chart-column"></i> Evolução Mensal de Despesas</h3>
+                        <div class="chart-container">
+                            <canvas id="expenses-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- PRODUCTS CATALOG -->
+                    <div class="info-card products-card">
+                        <h3><i class="fa-solid fa-wallet"></i> Produtos Recomendados</h3>
+                        <div class="products-grid" id="products-container">
+                            <!-- Produtos carregados dinamicamente -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RIGHT COLUMN: CHAT INTERFACE -->
+            <section class="chat-section card-glass">
+                <div class="section-header">
+                    <h2><i class="fa-solid fa-comments"></i> Conversar com Di</h2>
+                    <span class="status-indicator online">Online</span>
+                </div>
+
+                <div class="chat-messages-container" id="chat-messages">
+                    <!-- Mensagens do chat aparecerão aqui -->
+                    <div class="message system-message">
+                        <p>Carregando base de dados do cliente...</p>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <input type="text" id="chat-input" placeholder="Pergunte ao Di sobre seus gastos, investimentos ou metas..." disabled>
+                    <button id="chat-send-btn" disabled><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
