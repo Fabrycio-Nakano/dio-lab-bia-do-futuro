@@ -51,8 +51,5 @@
 
 ---
 
-## Link do Vídeo
-
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
-
-* **Link:** [Insira o link do seu vídeo gravado aqui]
+* **Slides:** [Canva](https://canva.link/byb0lsnrmmo7ho1)
+* **Vídeo:** [ ]
