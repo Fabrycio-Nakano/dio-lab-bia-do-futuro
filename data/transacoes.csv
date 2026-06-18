@@ -1,4 +1,24 @@
 data,descricao,categoria,valor,tipo
+2025-08-01,Salário,receita,5000.00,entrada
+2025-08-02,Aluguel,moradia,1200.00,saida
+2025-08-03,Supermercado,alimentacao,410.00,saida
+2025-08-05,Netflix,lazer,55.90,saida
+2025-08-07,Restaurante,alimentacao,95.00,saida
+2025-08-10,Uber,transporte,35.00,saida
+2025-08-15,Conta de Luz,moradia,155.00,saida
+2025-08-20,Academia,saude,99.00,saida
+2025-08-22,Combustível,transporte,240.00,saida
+2025-08-25,Aporte CDB,investimento,500.00,saida
+2025-09-01,Salário,receita,5000.00,entrada
+2025-09-02,Aluguel,moradia,1200.00,saida
+2025-09-03,Supermercado,alimentacao,480.00,saida
+2025-09-05,Netflix,lazer,55.90,saida
+2025-09-08,Restaurante,alimentacao,150.00,saida
+2025-09-10,Uber,transporte,60.00,saida
+2025-09-15,Conta de Luz,moradia,168.00,saida
+2025-09-20,Academia,saude,99.00,saida
+2025-09-22,Combustível,transporte,260.00,saida
+2025-09-25,Aporte Tesouro,investimento,600.00,saida
 2025-10-01,Salário,receita,5000.00,entrada
 2025-10-02,Aluguel,moradia,1200.00,saida
 2025-10-03,Supermercado,alimentacao,450.00,saida
@@ -8,4 +28,5 @@ data,descricao,categoria,valor,tipo
 2025-10-12,Uber,transporte,45.00,saida
 2025-10-15,Conta de Luz,moradia,180.00,saida
 2025-10-20,Academia,saude,99.00,saida
-2025-10-25,Combustível,transporte,250.00,saida
+2025-10-22,Combustível,transporte,250.00,saida
+2025-10-25,Aporte Tesouro,investimento,700.00,saida

@@ -7,7 +7,7 @@
   "objetivo_principal": "Construir reserva de emergência",
   "patrimonio_total": 15000.00,
   "reserva_emergencia_atual": 10000.00,
-  "aceita_risco": false,
+  "aceita_risco": true,
   "metas": [
     {
       "meta": "Completar reserva de emergência",

@@ -5,6 +5,8 @@
     "risco": "baixo",
     "rentabilidade": "100% da Selic",
     "aporte_minimo": 30.00,
+    "liquidez": "D+1 (Diária)",
+    "carencia_dias": 0,
     "indicado_para": "Reserva de emergência e iniciantes"
   },
   {
@@ -13,6 +15,8 @@
     "risco": "baixo",
     "rentabilidade": "102% do CDI",
     "aporte_minimo": 100.00,
+    "liquidez": "D+0 (Diária)",
+    "carencia_dias": 0,
     "indicado_para": "Quem busca segurança com rendimento diário"
   },
   {
@@ -21,7 +25,9 @@
     "risco": "baixo",
     "rentabilidade": "95% do CDI",
     "aporte_minimo": 1000.00,
-    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
+    "liquidez": "Após 90 dias",
+    "carencia_dias": 90,
+    "indicado_para": "Quem pode esperar pelo menos 90 dias (isento de IR)"
   },
   {
     "nome": "Fundo Multimercado",
@@ -29,6 +35,8 @@
     "risco": "medio",
     "rentabilidade": "CDI + 2%",
     "aporte_minimo": 500.00,
+    "liquidez": "D+30",
+    "carencia_dias": 30,
     "indicado_para": "Perfil moderado que busca diversificação"
   },
   {
@@ -37,6 +45,8 @@
     "risco": "alto",
     "rentabilidade": "Variável",
     "aporte_minimo": 100.00,
+    "liquidez": "D+3",
+    "carencia_dias": 0,
     "indicado_para": "Perfil arrojado com foco no longo prazo"
   }
 ]
